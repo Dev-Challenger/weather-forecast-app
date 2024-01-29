@@ -1,0 +1,26 @@
+
+.landing-container {
+    max-width: 40rem;
+  }
+  
+  .user-state-buttons {
+    margin-top: 3rem;
+  }
+  
+  .link-button {
+    width: 10rem;
+    padding: 1rem 2rem;
+    background-color: rgb(19, 19, 19);
+    border-radius: 4rem;
+  }
+  
+  .link-home {
+  
+    font-size: larger;
+    font-weight: bolder;
+  
+    width: 10rem;
+    padding: 1rem 2rem;
+  
+  }
+  

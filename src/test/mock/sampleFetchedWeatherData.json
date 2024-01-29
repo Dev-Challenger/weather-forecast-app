@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 121.0235,
+        "lat": 14.5569
+    },
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "scattered clouds",
+            "icon": "03n"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 298.35,
+        "feels_like": 298.73,
+        "temp_min": 298.01,
+        "temp_max": 298.99,
+        "pressure": 1020,
+        "humidity": 69
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 3.09,
+        "deg": 80
+    },
+    "clouds": {
+        "all": 40
+    },
+    "dt": 1706445439,
+    "sys": {
+        "type": 1,
+        "id": 8160,
+        "country": "PH",
+        "sunrise": 1706394286,
+        "sunset": 1706435538
+    },
+    "timezone": 28800,
+    "id": 1692193,
+    "name": "Makati",
+    "cod": 200
+}
