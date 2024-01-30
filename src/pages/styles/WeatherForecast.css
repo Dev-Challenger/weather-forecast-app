@@ -1,54 +1,66 @@
+
+
+h2 {
+  color: rgb(0, 224, 224);
+}
+
 .weather-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    padding: 1rem 2rem 3rem;
-    border: #61dafbaa;
-    border-radius: 4rem;
-    border-style: dashed;
-    margin-bottom: 4rem;
-  
-    background-color: #61dafb0c;
-    
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem 2rem 3rem;
+  border: #61dafbaa;
+  border-radius: 4rem;
+  border-style: dashed;
+  margin-bottom: 4rem;
+
+  background-color: #61dafb0c;
+
+}
+
+.weather-grid {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  margin-left: -2rem;
+
+}
+
+.weather-grid ul {
+  list-style-type: none;
+}
+
+.weather-grid ul :first-child {
+  font-weight: 1000;
+  margin-bottom: 0.3rem;
+}
+
+.weather-grid ul :not(:first-child) {
+  padding: 0.4rem;
+  border-radius: 0.6rem;
+  background-color: #88888880;
+}
+
+
+.city-name {
+  color: rgb(175, 255, 96);
+}
+
+
+@media (max-width: 600px) {
+
+  .weather-main {
+    max-width: 20rem;
   }
-  
+
   .weather-grid {
-    display: flex;
-    flex-direction: row;
-    text-decoration: none;
-    margin-left: -2rem;
-    
-  }
-  
-  .weather-grid ul {
-    list-style-type: none;
-  }
-  
-  .weather-grid ul :first-child {
-    font-weight: 1000;
-    margin-bottom: 0.3rem;
-  }
-  
-  .weather-grid ul :not(:first-child) {
-    padding: 0.4rem;
-    border-radius: 0.6rem;
-    background-color: #88888880;
+    margin-left: -3rem;
   }
 
-  @media ( max-width: 600px ) { 
-
-    .weather-main {
-        max-width: 20rem;
-    }
-
-    .weather-grid {
-        margin-left: -3rem;
-    }
-
-    .weather-grid ul:nth-child(n+3) {
-        display: none;
-    }
-
+  .weather-grid ul:nth-child(n+3) {
+    display: none;
   }
+
+}

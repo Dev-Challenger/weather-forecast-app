@@ -1,11 +1,12 @@
 import { useAuth0 } from "@auth0/auth0-react";
+import './styles/AuthLogout.css'
 
 const AuthLogout = () => {
     const { logout, isAuthenticated } = useAuth0();
 
     return (
         isAuthenticated &&
-        <button onClick={() => logout()}>Logout</button>
+        <button className="button-logout" onClick={() => logout()}>Logout</button>
     )
 };
 

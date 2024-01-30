@@ -8,3 +8,24 @@
     border-bottom: 1px solid #000;
     justify-content: space-between;
 }
+
+.logo-icon {
+    width: 65px;
+}
+
+.link-logo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: large;
+    color: rgb(153, 172, 238);
+  }
+
+  .link-logo > * {
+    margin-right: 1rem;
+  }
+  
+  

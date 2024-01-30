@@ -2,8 +2,13 @@
 .landing-container {
     max-width: 40rem;
   }
+
+
+.text-welcome {
+  color: rgb(152, 231, 149);
+}
   
-  .user-state-buttons {
+  .user-state-actions {
     margin-top: 3rem;
   }
   
