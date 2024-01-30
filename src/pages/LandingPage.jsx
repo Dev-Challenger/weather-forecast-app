@@ -25,7 +25,7 @@ const LandingPage = () => {
             <img className="logo" src={worldIcon} alt="logo" />
 
             <h1 className="text-welcome">Hello World!</h1>
-            <p>Welcome to the weather forecast web application. Please login with your
+            <p className="intro-text">Welcome to the weather forecast web application. Please login with your
                 Github user to use the application and view the weather in your city.</p>
 
             <div className="user-state-actions">

@@ -1,6 +1,11 @@
+.intro-text {
+  font-size: large
+}
+
 
 .landing-container {
     max-width: 40rem;
+    margin: 0 2rem;
   }
 
 
@@ -29,3 +34,15 @@
   
   }
   
+
+  @media (prefers-color-scheme: light) {
+    .text-welcome {
+      color: rgb(77, 163, 74);
+    }
+
+    .link-button {
+      color:azure;
+      background-color: rgb(147, 176, 187);
+    }
+    
+  }
