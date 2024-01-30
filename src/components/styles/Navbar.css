@@ -28,4 +28,13 @@
     margin-right: 1rem;
   }
   
-  
+  @media (prefers-color-scheme: light) {
+    .navbar {
+      background-color: rgb(178, 193, 209);
+      border-color: aliceblue;
+    }
+
+    .link-logo {
+      color: #ffffff;
+    }
+  }

@@ -3,3 +3,14 @@
     background-color: rgb(36, 36, 36);
     border-radius: 0;
 }
+
+
+@media (prefers-color-scheme: light) {
+
+    .button-logout {
+        color: rgb(101, 202, 76);
+        background-color: rgb(197, 218, 231);
+        border-radius: 0;
+    }
+    
+}
