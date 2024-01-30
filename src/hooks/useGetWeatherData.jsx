@@ -4,7 +4,7 @@ import { fetchWeatherData } from '../services/fetchWeatherData';
 export const useGetWeatherData = (city) => {
 
     return useQuery({
-        queryKey: ["items"],
+        queryKey: ["weather"],
         queryFn: () => fetchWeatherData(city),
     })
 }
