@@ -1,6 +1,6 @@
 export const fetchCities = async (inputValue) => {
 
-    const url = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?namePrefix=${inputValue}`;
+    const url = `https://wft-geo-db.p.rapidapi.com/v1/geo/cities?minPopulation=10000&namePrefix=${inputValue}`;
     const options = {
         method: 'GET',
         headers: {
