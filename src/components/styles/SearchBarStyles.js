@@ -6,7 +6,7 @@ const SearchBarStyles = {
         boxShadow: state.isFocused ? '0 0 0 2px #222' : null,
         background: state.isFocused ? '#ccc' : null,
         color: '#333',
-        width: '22rem',
+        width: '18rem',
         height: '3rem',
         padding: '5px',
         margin: '5px',
