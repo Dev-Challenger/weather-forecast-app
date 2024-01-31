@@ -14,7 +14,7 @@ h2 {
   border: #61dafbaa;
   border-radius: 4rem;
   border-style: dashed;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 
   background-color: #61dafb0c;
 
@@ -48,6 +48,16 @@ h2 {
   color: rgb(175, 255, 96);
 }
 
+.page-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-button {
+  margin-bottom: 2rem;
+}
 
 @media (max-width: 600px) {
 
@@ -63,7 +73,23 @@ h2 {
     display: none;
   }
 
+  .page-actions {
+    flex-direction: column;
+    margin: 0;
+  }
+
+
 }
+
+@media (max-width: 600px) {
+
+  .search-info {
+    margin-top: 7rem;
+    font-size: medium;
+    max-width: 18rem;
+  }
+}
+
 
 @media (prefers-color-scheme: light) {
   .city-name {
@@ -76,3 +102,4 @@ h2 {
   }
   
 }
+

@@ -33,7 +33,26 @@
     padding: 1rem 2rem;
   
   }
-  
+
+  @media (max-width: 600px) {
+
+    body{
+      top: 0;
+      height: 8vh;
+      margin: 0;
+      padding: 0
+    
+    }
+
+    .intro-text {
+      font-size: small
+    }
+
+    .logo {
+      margin-top: 2rem;
+      padding: 0;
+    }
+  }
 
   @media (prefers-color-scheme: light) {
     .text-welcome {
