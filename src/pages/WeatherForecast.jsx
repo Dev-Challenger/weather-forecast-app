@@ -14,7 +14,7 @@ const WeatherForecast = () => {
     return (
         <div className="weather-main">
 
-            <h2>Searched Weather Information for: {city}</h2>
+            <h2 className="search-info">Searched Weather Information for: {city}</h2>
 
             <div className="weather-info">
 
