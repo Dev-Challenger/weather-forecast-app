@@ -4,8 +4,10 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import AuthLogin from "../components/AuthLogin";
+import PageLoading from "../components/PageLoading";
 import worldIcon from '../assets/worldIcon.png';
 import './styles/LandingPage.css'
+
 
 const LandingPage = () => {
 
@@ -22,7 +24,8 @@ const LandingPage = () => {
     return (
         <div className="landing-container">
         
-            <img className="logo" src={worldIcon} alt="logo" />
+            {!isLoading ? <img className="logo" src={worldIcon} alt="logo" /> :
+            <PageLoading waitText={"Logging you in"}/> }
 
             <h1 className="text-welcome">Hello World!</h1>
             <p className="intro-text">Welcome to the weather forecast web application. Please login with your

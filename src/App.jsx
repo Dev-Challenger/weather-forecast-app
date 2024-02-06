@@ -6,6 +6,8 @@ import ErrorBoundary from './ErrorBoundary.jsx';
 import { lazy, Suspense } from 'react';
 import LandingPage from './pages/LandingPage.jsx';
 import ProtectedRoutes from './utils/ProtectedRoutes.jsx';
+import PageLoading from './components/PageLoading.jsx';
+import ErrorRequest from './components/ErrorRequest.jsx'
 
 const Home = lazy(() => import('./pages/Home.jsx'))
 const WeatherForecast = lazy(() => import('./pages/WeatherForecast.jsx'))
@@ -18,18 +20,18 @@ function App() {
 
       <Navbar />
 
-      <Suspense fallback={<h1>Loading...</h1>}>
+      <Suspense fallback={<PageLoading waitText={"Loading Page..."}/>}>
         <Routes>
 
           <Route path="/" element={
-            <ErrorBoundary fallback={<h1>Something went wrong</h1>}>
+            <ErrorBoundary fallback={<ErrorRequest/>}>
               <LandingPage />
             </ErrorBoundary>} />
 
           <Route element={<ProtectedRoutes />}>
 
             <Route path="/home" element={
-              <ErrorBoundary fallback={<h1>Something went wrong</h1>}>
+              <ErrorBoundary fallback={<ErrorRequest/>}>
                 <Home />
               </ErrorBoundary>
             } />

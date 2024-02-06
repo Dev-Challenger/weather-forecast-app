@@ -2,6 +2,7 @@ import { useGetWeatherData } from "../hooks/useGetWeatherData";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import WeatherDetails from "../details/WeatherDetails";
+import SearchLoading from "../components/SearchLoading";
 import './styles/WeatherForecast.css'
 
 const WeatherForecast = () => {
@@ -16,7 +17,7 @@ const WeatherForecast = () => {
 
             <div className="weather-info">
 
-                {isFetching ? <h1>Loading...</h1> : <>
+                {isFetching ? <SearchLoading /> : <>
                     {weatherData ? (<>
 
                         <h1 className="city-name">
